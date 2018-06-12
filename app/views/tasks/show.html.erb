@@ -1,6 +1,10 @@
 <h1> This is the page of <%= @task.title %></h1>
 
+
 <h3>Details : <%= @task.details %></h3>
 
-<%= link_to "Back to list", tasks_path %>
+<%= link_to "Back to list", tasks_path, class:"btn btn-primary" %>
+<%= link_to "Edit task", edit_path, class:"btn btn-primary" %>
+
+
 

@@ -2,9 +2,9 @@
 
 <ul>
   <% @tasks.each do |task| %>
-    <li> <%= link_to task.title, task_path(task) %> (<%= task.details %>) -- <%= link_to "Delete this task", task_path(task), method: :delete, data: { confirm: "Are you sure?" }%></li>
+    <li> <%= link_to task.title, task_path(task) %> (<%= task.details %>) -- <%= link_to "Delete this task", task_path(task), method: :delete, data: { confirm: "Are you sure?" }, class:"btn btn-warning"%></li>
   <% end %>
 </ul>
 
-<%= link_to "Add a new task", new_task_path%>
+<%= link_to "Add a new task", new_task_path, class:"btn btn-primary"%>
 
